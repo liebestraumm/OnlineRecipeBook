@@ -1,0 +1,16 @@
+<a href="#" (click)="onClickedElement(recipe)"  class="list-group-item clearfix fitword">
+    <div class="pull-left" style="width: 78%;">
+        <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+    </div>
+    <span>
+        <div class="pull-right">
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="image-responsive" style="max-height: 50px;">
+        </div>
+    </span>
+    <div class="row">
+        <div class="col-xs-12">   
+        <hr style="margin: 5px;">
+        <p class="list-group-item-text">{{recipe.description}}</p>
+        </div>
+    </div>
+</a>

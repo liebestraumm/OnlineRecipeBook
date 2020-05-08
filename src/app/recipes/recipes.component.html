@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-5">
+        <app-recipe-list (recipeContent)="onSideBarContent($event)"></app-recipe-list>
+    </div>
+    <div class="col-xs-7">
+        <app-recipe-detail *ngIf="recipeElement; else infoText" [recipeDetail]="recipeElement"></app-recipe-detail>
+        <ng-template #infoText> 
+            <p>Selecciona mamaguevo!</p>
+        </ng-template>
+    </div>
+</div>
