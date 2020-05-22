@@ -12,9 +12,7 @@ export class RecipeItemComponent implements OnInit {
   constructor(private recipeService: RecipeService) { }
 
   @Input() recipe: Recipe;
-  @Output() recipeEvent = new EventEmitter<Recipe>();
   onClickedElement(element: Recipe) {
-    console.log(element);
      this.recipeService.recipeEvent.emit(element);
   }
 
